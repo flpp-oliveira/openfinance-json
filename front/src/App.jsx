@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import reactLogo from './assets/logo.svg';
 import './App.css';
 import 'virtual:windi.css';
@@ -110,13 +111,19 @@ function App() {
       <header className="fixed top-0 left-0 w-full z-50 bg-white text-black shadow-md">
         <div className="px-4 py-4 flex items-center justify-between">
           <div className="w-1/3 flex justify-start">
-            <img src={reactLogo} alt="Logo" className="w-10 h-auto" />
+            <Link to="/">
+              <img src={reactLogo} alt="Logo" className="w-10 h-auto" />
+            </Link>
           </div>
           <nav className="w-1/3 flex justify-center space-x-6 text-sm">
-            <a href="#" className="hover:text-gray-300 transition">Home</a>
-            <a href="#" className="hover:text-gray-300 transition">Generate</a>
-            <a href="#" className="hover:text-gray-300 transition">Inspect</a>
-            <a href="#" className="hover:text-gray-300 transition">Github</a>
+            <Link to="/" className="hover:text-purple-600 transition">Home</Link>
+            <Link to="/generate" className="hover:text-purple-600 transition">Generate</Link>
+            <a href="https://github.com" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               className="hover:text-purple-600 transition">
+              Github
+            </a>
           </nav>
           <div className="w-1/3" />
         </div>
