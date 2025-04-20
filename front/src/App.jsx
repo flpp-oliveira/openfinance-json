@@ -118,11 +118,11 @@ function App() {
           <nav className="w-1/3 flex justify-center space-x-6 text-sm">
             <Link to="/" className="hover:text-purple-600 transition">Home</Link>
             <Link to="/generate" className="hover:text-purple-600 transition">Generate</Link>
-            <a href="https://github.com" 
+            <a href="https://github.com/flpp-oliveira/openfinance-json" 
                target="_blank" 
                rel="noopener noreferrer" 
                className="hover:text-purple-600 transition">
-              Github
+               GitHub
             </a>
           </nav>
           <div className="w-1/3" />
